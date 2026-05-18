@@ -7,7 +7,7 @@ st.sidebar.header("Global Assumptions")
 num_arms = st.sidebar.number_input("Number of Test Arms", min_value=2, max_value=4, value=3)
 duration = st.sidebar.slider("Study Duration (Weeks)", 1, 26, 8)
 geo_holdout = st.sidebar.slider("Geo Holdout %", 0.0, 0.5, 0.28)
-olv_cpm = st.sidebar.number_input("OLV CPM ($)", value=12.50)
+olv_cpm = st.sidebar.number_input("YouTube CPM ($)", value=12.50)
 cpr = st.sidebar.number_input("Cost Per Response ($)", value=12.50)
 
 st.sidebar.divider()
@@ -37,8 +37,8 @@ st.write(f"Parameters: **{num_arms} Arms** | **{duration} Weeks** | **{int(geo_h
 # --- Scenario Cards ---
 scenarios =[
     ("Scenario A: 1-Question", 1, "Focus: Consideration (12% Base)"),
-    ("Scenario B: 2-Questions", 2, "Focus: Awareness (45% Base)"),
-    ("Scenario C: 3-Questions", 3, "Focus: Awareness (45% Base)")
+    ("Scenario B: 2-Questions", 2, ""),
+    ("Scenario C: 3-Questions", 3, "")
 ]
 
 cols = st.columns(3)
